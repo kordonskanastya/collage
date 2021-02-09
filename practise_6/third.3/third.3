@@ -1,0 +1,17 @@
+import datetime
+
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+
+letter = str(input('Введіть літеру англіського алфавіту: '))
+if letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o' or letter == 'u':
+    print('введена буква – голосна')
+
+elif letter == 'y':
+    print('інколи y – голосна, а інколи – приголосна')
+
+else:
+    print('буква приголосна')
+
+printTimeStamp('Anastasiia Kordonska')
